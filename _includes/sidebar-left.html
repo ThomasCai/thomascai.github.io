@@ -1,12 +1,12 @@
 <header class="masthead">
-  {% if site.user -%}
-    <div class="user">
-      {%- if site.user contains "://" -%}
-        {%- assign user = site.user -%}
+  {% if site.avatar -%}
+    <div class="avatar">
+      {%- if site.avatar contains "://" -%}
+        {%- assign avatar = site.avatar -%}
       {%- else -%}
-        {%- assign user = site.user | relative_url -%}
+        {%- assign avatar = site.avatar | relative_url -%}
       {%- endif -%}
-      <img src="{{ user }}" class="user-image" alt="{{ site.author.name }}">
+      <img src="{{ avatar }}" class="avatar-image" alt="{{ site.author.name }}">
     </div>
   {%- endif %}
   <div class="masthead-title">
