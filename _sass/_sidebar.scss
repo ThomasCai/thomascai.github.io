@@ -13,7 +13,7 @@
   }
 }
 
-.avatar-image {
+.user-image {
   width: 30%;
   height: auto;
   border-radius: 50%;
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: $md-width) {
-  .avatar-image {
+  .user-image {
     width: 15%;
   }
 }
