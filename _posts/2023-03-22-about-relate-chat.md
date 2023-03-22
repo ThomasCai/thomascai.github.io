@@ -2,7 +2,8 @@
 layout: post
 title: About relate chat
 author: ThomasCai
-tags: life record
+tags: Life Record
+categories: Life Record
 date: 2023-03-22 17:56 +0800
 ---
 
