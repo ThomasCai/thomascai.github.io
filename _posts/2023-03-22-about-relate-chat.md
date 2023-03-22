@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 关于最近的闲聊
+title: About relate chat
 author: ThomasCai
 tags:
-- 生活记录
+- life record
 date: 2023-03-22 17:56 +0800
 ---
 
-这是一个样例，测试一下Markdown的格式。
+This is a test.
 
 The Jekyll theme **Not Pure Poole** v0.1.0 was released!
 
