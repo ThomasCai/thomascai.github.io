@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Welcome to Not Pure Poole
+title: Welcome to Thomas Cai Home
 date: 2020-09-29 23:18 +0800
 last_modified_at: 2020-10-01 01:08:25 +0800
-tags: [jekyll theme, jekyll, tutorial]
+tags: 测试tag
+math: true
 toc:  true
 ---
 Welcome to **Not Pure Poole**! This is an example post to show the layout.
@@ -167,3 +168,14 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 Want to see something else added? <a href="https://github.com/vszhub/not-pure-poole/issues/new">Open an issue.</a>
 
 [^fn-sample_footnote]: Handy! Now click the return link to go back.
+
+Not Pure Poole supports [MathJax](https://www.mathjax.org/). You can enable it on a page by setting `math: true` in the front matter.
+
+An inline math: \\\(E=mc^2\\\).
+
+A display math:
+
+$$
+i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}
+\frac{\partial^2 \Psi}{\partial x^2} + V \Psi
+$$
