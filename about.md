@@ -3,6 +3,12 @@ layout: page
 title: About
 ---
 
-**Not Pure Poole** is a simple, beautiful, and powerful Jekyll theme for blogs. It is built on [Poole](https://github.com/poole/poole) and [Pure](https://purecss.io/).
+欢迎~这里是ThomasCai的个人主页，算法程序员一枚，兴趣在计算机视觉，志向做一名文艺的程序员。
 
-For more information about Not Pure Poole, please browse the [README](https://github.com/vszhub/not-pure-poole) file.
+极客的同时，兼顾摄影，也是一名摄影爱好者.
+
+时不时会去徒步(旅游)。
+
+人生苦短，欢迎结伴。
+
+![PersonWechat](img/person_wechat.jpeg)
