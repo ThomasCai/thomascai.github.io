@@ -17,6 +17,6 @@ date: 2023-02-24 21:00 +0800
 **CIOU**：= $iou - (d^2 / c^2 + av)$
 考虑到了距离和框的宽高
 
-![CIOU公式][_img/ciou.png]
+![CIOU公式](_img/ciou.png)
   
 参考：https://blog.csdn.net/ThomasCai001/article/details/123593690?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22123593690%22%2C%22source%22%3A%22ThomasCai001%22%7D
