@@ -3,6 +3,7 @@ layout: post
 title: IOU、GIOU、DIOU、CIOU之间的区别
 tags: deep_learning
 toc: true
+math: true
 date: 2023-02-24 21:00 +0800
 ---
 
