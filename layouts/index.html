@@ -143,4 +143,64 @@
        End Portfolio
     =============================== -->
 
+<!-- =============================
+       Start Research
+    =============================== -->
+{{ if .Site.Data.content.research.enable }} {{ with
+.Site.Data.content.research }}
+<section class="research" id="research">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>{{ .title }}</h2>
+      </div>
+    </div>
+    
+    {{ if .publications }}
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3 class="mb-4">论文发表</h3>
+        {{ range .publications }}
+        <div class="publication-item mb-4">
+          <h4>{{ .title }}</h4>
+          <p class="text-muted">
+            <strong>作者:</strong> {{ .authors }} | 
+            <strong>发表:</strong> {{ .venue }} | 
+            <strong>年份:</strong> {{ .year }}
+          </p>
+          <p>{{ .description | markdownify }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+    
+    {{ if .patents }}
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3 class="mb-4">专利与创新成果</h3>
+        <div class="row">
+          {{ range .patents }}
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="patent-item p-3 border rounded">
+              <h5>{{ .name }}</h5>
+              <p class="text-muted mb-2">
+                <span class="badge badge-primary">{{ .type }}</span>
+                <span class="badge badge-success">{{ .status }}</span>
+              </p>
+              <p>{{ .description }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }} {{ end }}
+<!-- =============================
+       End Research
+    =============================== -->
+
 {{- partial "footer.html" . -}} {{ end }}

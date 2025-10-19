@@ -1,12 +1,13 @@
 ########################## hero area ##########################
 hero:
-  title: "I'm Burton Guster"
+  title: "我是蔡天任"
 
   # animated text loop
   occupations:
-    - 'Web Developer'
-    - 'Pharmaceutical Salesman'
-    - 'Private Detective'
+    - '算法工程师'
+    - '计算机视觉专家'
+    - '深度学习研究者'
+    - '大模型开发工程师'
 
   # hero background image
   bg_image: 'images/background.jpg'
@@ -17,83 +18,211 @@ hero:
 about:
   enable: true
   image: 'images/profile.jpg'
-  title: 'THIS IS ME'
-  content: Hi, thank you for taking a look around my site. If you have any questions feel free to reach out on [LinkedIn, Github, or by email](#contact)!
+  title: '关于我'
+  content: |
+    你好，我是**蔡天任**，一名专注于计算机视觉、目标检测与多模态应用以及大模型开发的算法工程师。
+    
+    拥有 6 年算法研发经验，主导多个视觉检测、分割及大模型项目从 0 到 1 落地。
+    
+    **核心技能：**
+    - 深度学习：YOLO 系列、Transformer、CLIP、SAM、多模态学习
+    - 工程化部署：ONNX、TensorRT、算子融合、C++ 推理封装
+    - 系统优化：模型轻量化、吞吐率提升、推理加速
+    - 管理与协作：小团队带领、技术规划、跨部门交付
+    
+    我相信"**研究与落地并重，算法应解决真实问题**"。目前专注于高性能视觉系统与大模型应用的产业落地。
   button:
     enable: true
-    label: 'DOWNLOAD MY RESUME'
-    link: #
+    label: '下载简历'
+    link: '#'
     icon: 'fa-download'
 
 ###########################3 Experience ##############################
 experience:
   enable: true
-  title: 'EXPERIENCE'
+  title: '工作经历'
   experience_list:
-    - name: Web Developer
-      company: Freelance
-      duration: '2020-Current'
-      content: I make websites.
+    - name: 计算机视觉算法负责人
+      company: 弓叶科技
+      duration: '2023.06 - 至今'
+      content: |
+        **核心成果：**
+        - 优化 **YOLOv8 小目标实例分割模型**，精度 mAP@50 从 85% 提升至 **95%+**，推理速度提升 **2 倍**
+        - **SAM 智能标注系统** 实现 30 倍效率提升，累计生成 **150 万+** 高质量数据
+        - 基于 **CLIP 与 DeepSeek** 构建多模态标注系统与 SQL 生成问答系统，准确率 **90%+**
+        - 工业计数系统部署至 **12 条产线**，计数准确率超 **98%**，吞吐能力提升 2 倍
+        - 获得公司 **"年度最佳研发奖"**，输出 **3 项发明专利**
 
-    - name: Private Detective
-      company: Psych
-      duration: '2019-2020'
-      content: Okay. This is hard to explain but I’m going to give it a shot. You and I are opening our own private detective agency.
+    - name: 算法工程师
+      company: 华为技术有限公司
+      duration: '2020.04 - 2023.06'
+      content: |
+        **核心成果：**
+        - 主导工业质检检测算法与 **昇腾 AI 芯片** 适配优化
+        - **YOLOv4** 训练时间缩短 **70%**，mAP 稳定 **99%+**，**50+** 产线落地
+        - 开发 AI 模型 **SDK 化部署方案**，推理效率提升 **22%**，支持 ISV 平台日均调用 **40 万+**
+        - 参与昇思框架 **算子融合开发**，推理速度提升 **25%**，方案合入主干服务百家企业
 
-    - name: Pharmaceutical Salesman
-      company: South Coast Pharmaceuticals
-      duration: '2012-2018'
-      content: We are not bounty hunters, Shawn. I am a pharmaceutical salesman. And Lassiter made it very clear! He said in no uncertain terms. These are certain terms, Shawn! Certain terms!
+    - name: 人工智能与机器学习工程师
+      company: 顺丰科技
+      duration: '2018.07 - 2020.04'
+      content: |
+        **核心成果：**
+        - 开发 **服务器智能运维预测系统**，CPU/内存预测准确率由 53% 提升至 **78%**
+        - 成功支撑 **"双11"、"双12"** 物流高峰，保障系统稳定运行
+        - 资源调度效率提升 **35%**，误报率下降 **40%**，应用于核心业务服务器群
 
 ############################### Skill #################################
 skill:
   enable: true
-  title: 'SOME SKILLS'
-  showpercent: false
+  title: '核心技能'
+  showpercent: true
   skill_list:
-    - name: 'React'
+    - name: '深度学习 (PyTorch/TensorFlow)'
+      percentage: '95%'
+
+    - name: '计算机视觉 (YOLO/SAM/CLIP)'
+      percentage: '95%'
+
+    - name: '模型部署 (ONNX/TensorRT)'
+      percentage: '90%'
+
+    - name: 'C++/Python 工程化'
+      percentage: '90%'
+
+    - name: '多模态大模型应用'
       percentage: '85%'
 
-    - name: 'Detecting'
-      percentage: '93%'
-
-    - name: 'Selling'
-      percentage: '25%'
-
-    - name: 'Yelling'
-      percentage: '100%'
+    - name: '团队管理与技术规划'
+      percentage: '80%'
 
 ######################### funfacts #############################3
 funfacts:
   enable: true
   funfacts_list:
-    - name: 'CUPS PER DAY'
-      image: 'images/icons/coffee.png'
+    - name: '工作年限'
+      image: 'images/icons/works.png'
+      count: '6'
+
+    - name: '项目落地'
+      image: 'images/icons/project.png'
+      count: '50'
+
+    - name: '发明专利'
+      image: 'images/icons/marketing.png'
+      count: '3'
+
+    - name: '论文发表'
+      image: 'images/icons/graphic-design.png'
       count: '2'
-
-    - name: 'SITES BUILT'
-      image: 'images/icons/web-development.png'
-      count: '25'
-
-    - name: 'USELESS ROW OF ICONS'
-      image: 'images/icons/happy.png'
-      count: '1'
 
 ############################# portfolio ################################
 portfolio:
   enable: true
-  title: 'MY WORK'
+  title: '代表项目'
   portfolio_list:
-    - name: Hugo
+    - name: YOLOv8 小目标实例分割优化
       image: 'images/portfolio/hugo.png'
-      url: https://gohugo.io
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      url: '#'
+      description: |
+        针对工业场景小目标检测难题，优化 YOLOv8 模型架构与训练策略。
+        
+        **技术亮点：**
+        • 精度 mAP@50 从 85% 提升至 95%+
+        • 推理速度提升 2 倍，满足实时性要求
+        • 部署至 12 条产线，计数准确率超 98%
+        
+        **技术栈：** PyTorch, YOLOv8, TensorRT, ONNX
 
-    - name: Hugo Themes
+    - name: SAM 智能标注系统
       image: 'images/portfolio/hugothemes.png'
-      url: https://gohugo.io
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      url: '#'
+      description: |
+        基于 Segment Anything Model (SAM) 开发的智能标注平台，大幅提升数据标注效率。
+        
+        **核心成果：**
+        • 标注效率提升 30 倍
+        • 累计生成 150 万+ 高质量标注数据
+        • 支持交互式标注与自动化批量处理
+        
+        **技术栈：** SAM, FastAPI, Vue.js, PostgreSQL
 
-    - name: Just A Design
+    - name: 多模态智能问答系统
       image: 'images/portfolio/design.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      url: '#'
+      description: |
+        基于 CLIP 与 DeepSeek 构建的多模态标注系统与数据库智能问答系统。
+        
+        **应用场景：**
+        • 图文混合检索，准确率 90%+
+        • SQL 自动生成，支持自然语言查询
+        • 提升业务人员数据分析效率 5 倍
+        
+        **技术栈：** CLIP, DeepSeek, RAG, LangChain, ChromaDB
+
+    - name: 昇腾 AI 芯片适配优化
+      image: 'images/portfolio/hugo.png'
+      url: '#'
+      description: |
+        主导工业质检算法在华为昇腾 AI 芯片上的适配与性能优化工作。
+        
+        **优化成果：**
+        • YOLOv4 训练时间缩短 70%
+        • 推理效率提升 22%
+        • 50+ 产线成功落地，mAP 稳定 99%+
+        
+        **技术栈：** 昇腾 CANN, MindSpore, YOLOv4, C++
+
+    - name: 服务器智能运维系统
+      image: 'images/portfolio/hugothemes.png'
+      url: '#'
+      description: |
+        开发基于时序预测的服务器资源智能运维系统，保障电商大促期间系统稳定。
+        
+        **关键指标：**
+        • CPU/内存预测准确率从 53% 提升至 78%
+        • 资源调度效率提升 35%，误报率下降 40%
+        • 成功支撑"双11"、"双12"物流高峰
+        
+        **技术栈：** LSTM, Prophet, Spark, Kafka, InfluxDB
+
+############################# research ################################
+research:
+  enable: true
+  title: '科研成果'
+  
+  # 论文发表
+  publications:
+    - title: 'An Improved Histogram Based Boosting Detection Rate Video Watermarking Algorithm'
+      authors: '蔡天任 等'
+      venue: 'International Journal on Future Revolution in Computer Science & Communication Engineering'
+      year: '2018'
+      description: '提出一种基于直方图的鲁棒视频水印算法，实现版权水印在录制场景下仍可检测，增强数字内容版权保护能力。'
+      
+    - title: '基于聚合通道特征及卷积神经网络的行人检测'
+      authors: '蔡天任 等'
+      venue: '计算机工程与设计'
+      year: '2016'
+      description: '提出结合聚合通道特征 (ACF) 与 CNN 的行人检测算法，提高复杂场景检测召回率。'
+  
+  # 专利与创新成果
+  patents:
+    - name: '多模态辅助标注系统及方法'
+      type: '发明专利'
+      status: '已授权'
+      description: '基于多模态学习技术的智能标注系统，显著提升数据标注效率。'
+      
+    - name: '无监督图像检索优化方案'
+      type: '发明专利'
+      status: '已授权'
+      description: '创新的无监督学习方法，提升图像检索准确率与效率。'
+      
+    - name: '工业智能计数系统'
+      type: '发明专利'
+      status: '已授权'
+      description: '高精度工业场景目标计数系统，准确率超 98%。'
+      
+    - name: '基于 RAG 的数据库智能问答系统'
+      type: '发明专利'
+      status: '申请中'
+      description: '结合检索增强生成技术的智能问答系统，支持自然语言查询数据库。'
