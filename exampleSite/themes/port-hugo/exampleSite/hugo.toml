@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "https://thomascai.github.io/"
-title = "蔡天任 | 算法工程师"
+baseURL = "https://example.com"
+title = "Port Hugo"
 theme = "port-hugo"
 
 ############################# Plugins ##############################
@@ -48,26 +48,15 @@ name = "Portfolio"
 URL = "#portfolio"
 weight = 3
 
-[[menu.main]]
-name = "Education"
-URL = "#education"
-weight = 4
-
-[[menu.main]]
-name = "Research"
-URL = "#research"
-weight = 5
-
 
 #################### default parameters ################################
 [params]
-copyright = "Copyright © 2025 蔡天任"
+copyright = "Copyright Burton Guster &copy;"
 # Meta data
-description = "专注计算机视觉与多模态技术的算法工程师，聚焦模型优化与工业部署"
-author = "蔡天任"
+description = "Personal Portfolio"
+author = "Burton Guster"
 favicon = "images/favicon.png"
-google_analytics = ""
-enable_logo = false
+google_analytics = "G-ABCDEFG123"
 logo_light = "images/logo.svg"
 logo_dark = "images/logo-dark.svg"
 
@@ -80,17 +69,20 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 [[params.social]]
 icon = "fab fa-github"
-link = "https://github.com/caitianren"
+link = "https://github.com/tylersayshi"
 
 [[params.social]]
 icon = "fab fa-linkedin"
-link = "https://www.linkedin.com/in/tianren-cai"
+link = "https://www.linkedin.com/"
 
 [[params.social]]
 icon = "fas fa-envelope"
-link = "mailto:thomasctr001@163.com"
+link = "mailto:guster@burton.com"
 
 [[params.social]]
-image = "images/icons/csdn.png"
-link = "https://blog.csdn.net/ThomasCai001?spm=1000.2115.3001.5343"
-alt = "CSDN"
+icon = "fab fa-medium"
+link = "https://medium.com/@gusburton"
+
+contentDir = "content/english"
+weight = 1
+home = "Home"
