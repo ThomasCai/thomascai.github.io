@@ -1,7 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://thomascai.github.io/"
 title = "蔡天任 | 算法工程师"
-theme = "port-hugo"
 
 ############################# Plugins ##############################
 
