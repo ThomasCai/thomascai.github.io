@@ -49,19 +49,25 @@ URL = "#portfolio"
 weight = 3
 
 [[menu.main]]
+name = "Education"
+URL = "#education"
+weight = 4
+
+[[menu.main]]
 name = "Research"
 URL = "#research"
-weight = 4
+weight = 5
 
 
 #################### default parameters ################################
 [params]
-copyright = "Copyright © 2025 蔡天仁"
+copyright = "Copyright © 2025 蔡天任"
 # Meta data
 description = "专注计算机视觉与多模态技术的算法工程师，聚焦模型优化与工业部署"
-author = "蔡天仁"
+author = "蔡天任"
 favicon = "images/favicon.png"
 google_analytics = ""
+enable_logo = false
 logo_light = "images/logo.svg"
 logo_dark = "images/logo-dark.svg"
 
@@ -85,14 +91,6 @@ icon = "fas fa-envelope"
 link = "mailto:thomasctr001@163.com"
 
 [[params.social]]
-icon = "fab fa-zhihu"
-link = "https://www.zhihu.com/people/caitianren"
-
-contentDir = "content/english"
-weight = 1
-home = "Home"
-
-[[menu.main]]
-name = "Research"
-URL = "#research"
-weight = 4
+image = "images/icons/csdn.png"
+link = "https://blog.csdn.net/ThomasCai001?spm=1000.2115.3001.5343"
+alt = "CSDN"

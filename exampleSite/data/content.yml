@@ -12,7 +12,7 @@ hero:
   # hero background image
   bg_image: 'images/background.jpg'
   # optional mobile breakpoint background
-  mobile_bg_image: 'images/gus_small.jpg'
+  mobile_bg_image: 'images/background.jpg'
 
 ########################### About ##################################
 about:
@@ -22,9 +22,16 @@ about:
   content: |
     你好，我是**蔡天任**，一名专注于计算机视觉、目标检测与多模态应用以及大模型开发的算法工程师。
     
-    拥有 6 年算法研发经验，主导多个视觉检测、分割及大模型项目从 0 到 1 落地。
+    **基本信息：**
+    - **工作经验：** 7 年
+    - **所在地点：** 广东深圳
+    - **手　　机：** 16675573229
+    - **邮　　箱：** thomasctr001@163.com
+    
+    拥有 7 年算法研发经验，主导多个视觉检测、分割及大模型项目从 0 到 1 落地。
     
     **核心技能：**
+    - 大模型能力：本地部署、dify应用、RAGFlow、Agent、MCP
     - 深度学习：YOLO 系列、Transformer、CLIP、SAM、多模态学习
     - 工程化部署：ONNX、TensorRT、算子融合、C++ 推理封装
     - 系统优化：模型轻量化、吞吐率提升、推理加速
@@ -34,7 +41,7 @@ about:
   button:
     enable: true
     label: '下载简历'
-    link: '#'
+    link: '/caitianren_cv.pdf'
     icon: 'fa-download'
 
 ###########################3 Experience ##############################
@@ -47,10 +54,11 @@ experience:
       duration: '2023.06 - 至今'
       content: |
         **核心成果：**
+        - 构建基于 DeepSeek 的数据库问答系统，实现自然语言到 SQL 的高精度转换与执行，整体问答准确率**超过 90%**
+        - 设计并实现旋转框与分类模型的融合方案，对抠图算子进行算子化改造，显著提升推理效率（**+20% 性能，精度无损**)
         - 优化 **YOLOv8 小目标实例分割模型**，精度 mAP@50 从 85% 提升至 **95%+**，推理速度提升 **2 倍**
         - **SAM 智能标注系统** 实现 30 倍效率提升，累计生成 **150 万+** 高质量数据
         - 基于 **CLIP 与 DeepSeek** 构建多模态标注系统与 SQL 生成问答系统，准确率 **90%+**
-        - 工业计数系统部署至 **12 条产线**，计数准确率超 **98%**，吞吐能力提升 2 倍
         - 获得公司 **"年度最佳研发奖"**，输出 **3 项发明专利**
 
     - name: 算法工程师
@@ -59,9 +67,9 @@ experience:
       content: |
         **核心成果：**
         - 主导工业质检检测算法与 **昇腾 AI 芯片** 适配优化
-        - **YOLOv4** 训练时间缩短 **70%**，mAP 稳定 **99%+**，**50+** 产线落地
-        - 开发 AI 模型 **SDK 化部署方案**，推理效率提升 **22%**，支持 ISV 平台日均调用 **40 万+**
-        - 参与昇思框架 **算子融合开发**，推理速度提升 **25%**，方案合入主干服务百家企业
+        - **YOLOv4** mAP基本不变的前提下，训练时间缩短 **70%**，**50+** 产线落地
+        - 开发 AI 模型 **SDK 化部署方案**，推理开发效率提升 **22%**，支持 ISV 平台日均调用 **40 万+**
+        - 参与昇思框架 **算子融合框架开发**，推理速度提升 **25%**，方案合入主干服务百家企业
 
     - name: 人工智能与机器学习工程师
       company: 顺丰科技
@@ -102,15 +110,15 @@ funfacts:
   funfacts_list:
     - name: '工作年限'
       image: 'images/icons/works.png'
-      count: '6'
+      count: '7'
 
     - name: '项目落地'
       image: 'images/icons/project.png'
-      count: '50'
+      count: '20'
 
     - name: '发明专利'
       image: 'images/icons/marketing.png'
-      count: '3'
+      count: '4'
 
     - name: '论文发表'
       image: 'images/icons/graphic-design.png'
@@ -128,9 +136,10 @@ portfolio:
         针对工业场景小目标检测难题，优化 YOLOv8 模型架构与训练策略。
         
         **技术亮点：**
-        • 精度 mAP@50 从 85% 提升至 95%+
-        • 推理速度提升 2 倍，满足实时性要求
-        • 部署至 12 条产线，计数准确率超 98%
+
+        - 精度 mAP@50 从 85% 提升至 95%+
+        - 推理速度提升 2 倍，满足实时性要求
+        - 部署至 12 条产线，计数准确率超 98%
         
         **技术栈：** PyTorch, YOLOv8, TensorRT, ONNX
 
@@ -138,53 +147,87 @@ portfolio:
       image: 'images/portfolio/hugothemes.png'
       url: '#'
       description: |
-        基于 Segment Anything Model (SAM) 开发的智能标注平台，大幅提升数据标注效率。
+        基于SAM构建的智能标注平台，显著提升数据标注效率与质量。
         
         **核心成果：**
-        • 标注效率提升 30 倍
-        • 累计生成 150 万+ 高质量标注数据
-        • 支持交互式标注与自动化批量处理
-        
-        **技术栈：** SAM, FastAPI, Vue.js, PostgreSQL
 
-    - name: 多模态智能问答系统
+        - 标注效率提升至传统方式的 30 倍  
+        - 累计生成超 150 万条高质量标注数据  
+        - 支持交互式标注与自动化批量处理，兼顾精度与效率 
+        
+        **技术栈：** SAM, FastAPI, PyTorch, OpenCV
+
+    - name: 面向数据库的智能问答系统
       image: 'images/portfolio/design.png'
       url: '#'
       description: |
-        基于 CLIP 与 DeepSeek 构建的多模态标注系统与数据库智能问答系统。
+        基于 DeepSeek 与 LangChain 框架与数据库智能问答系统。
         
         **应用场景：**
-        • 图文混合检索，准确率 90%+
-        • SQL 自动生成，支持自然语言查询
-        • 提升业务人员数据分析效率 5 倍
-        
-        **技术栈：** CLIP, DeepSeek, RAG, LangChain, ChromaDB
 
-    - name: 昇腾 AI 芯片适配优化
-      image: 'images/portfolio/hugo.png'
+        - 引入 RAG 技术，从业务知识库中检索相似 SQL 模板，问答准确率提升至 90%+  
+        - 实现自然语言到 SQL 的自动生成与执行，支持多样化数据查询场景  
+        - 显著提升业务人员数据分析效率，平均提升 5 倍 
+        
+        **技术栈：** DeepSeek, RAG, LangChain、SQL优化
+    
+    - name: 多模态模型算法构建与部署
+      image: 'images/portfolio/multimodal.png'
       url: '#'
       description: |
-        主导工业质检算法在华为昇腾 AI 芯片上的适配与性能优化工作。
-        
-        **优化成果：**
-        • YOLOv4 训练时间缩短 70%
-        • 推理效率提升 22%
-        • 50+ 产线成功落地，mAP 稳定 99%+
-        
-        **技术栈：** 昇腾 CANN, MindSpore, YOLOv4, C++
+        基于 CLIP 与 Transformer 架构研发多模态智能标注与检索系统。
 
-    - name: 服务器智能运维系统
-      image: 'images/portfolio/hugothemes.png'
+        **核心成果：**
+
+        - 基于 CLIP 研发多模态辅助标注系统，实现图文跨模态多标签分类  
+        - 设计 Transformer 特征融合模块，优化跨模态对齐能力，检索召回率提升 2%   
+        - 支持自然语言检索图像与多标签智能标注功能，标注效率提升 50%，显著降低人工成本  
+
+        **技术栈：** CLIP, Transformer, PyTorch, Cross-Modal Fusion
+
+    - name: 工业产线多目标计数系统
+      image: 'images/portfolio/industrial_count.png'
       url: '#'
       description: |
-        开发基于时序预测的服务器资源智能运维系统，保障电商大促期间系统稳定。
-        
-        **关键指标：**
-        • CPU/内存预测准确率从 53% 提升至 78%
-        • 资源调度效率提升 35%，误报率下降 40%
-        • 成功支撑"双11"、"双12"物流高峰
-        
-        **技术栈：** LSTM, Prophet, Spark, Kafka, InfluxDB
+        基于目标检测与多目标跟踪技术构建的端到端工业产线计数系统，实现瓶体检测、跟踪与去重的自动化处理。
+
+        • 设计连续帧分析与 ROI 划分算法，有效抑制悬挂物干扰，计数准确率超 98%，实际误差低于 0.5%  
+        • 基于 TensorRT 优化模型推理，速度提升 100%（150 FPS → 300 FPS，RTX 3080Ti）  
+        • 系统成功部署并稳定运行，获客户高度认可，支撑项目关键阶段交付  
+
+        **技术栈：** 目标检测, 多目标跟踪, TensorRT, DeepSORT
+
+    - name: 昇腾AI工业质检算法优化
+      image: 'images/portfolio/ascend_ai.png'
+      url: '#'
+      description: |
+        从 0 到 1 构建适配昇腾 AI 芯片的工业质检目标检测算法，覆盖 YOLOv4 与 SSD 模型的训练与推理优化。
+
+        • 基于 MindSpore 与 CANN 进行模型适配与性能调优，YOLOv4 训练时间由 22h 降至 6.6h（↓70%），SSD 由 18h 降至 5.8h（↓68%）  
+        • 模型 mAP 稳定在 99%+，成功部署于 6 个工业客户场景，覆盖 50+ 条产线  
+        • 负责昇腾训推一体机训练侧对接与联调，推动首个昇腾端工业质检端到端闭环方案落地  
+
+        **技术栈：** YOLOv4, SSD, MindSpore, CANN, 昇腾 AI 芯片, Python, Shell
+
+
+########################### education ##############################
+education:
+  enable: true
+  title: '教育经历'
+  education_list:
+    - school: '桂林电子科技大学 | 清华大学'
+      major: '计算机技术'
+      degree: '硕士'
+      duration: '2015.09 - 2018.07'
+      type: '联合培养'
+      is_unified: '是'
+      
+    - school: '南昌工程学院'
+      major: '信息与计算科学'
+      degree: '本科'
+      duration: '2011.09 - 2015.07'
+      type: ''
+      is_unified: '是'
 
 ############################# research ################################
 research:
@@ -194,35 +237,40 @@ research:
   # 论文发表
   publications:
     - title: 'An Improved Histogram Based Boosting Detection Rate Video Watermarking Algorithm'
-      authors: '蔡天任 等'
+      authors: 'GX Chen, TR Cai, DS Wang, XH Zhao, Y Huang'
       venue: 'International Journal on Future Revolution in Computer Science & Communication Engineering'
       year: '2018'
       description: '提出一种基于直方图的鲁棒视频水印算法，实现版权水印在录制场景下仍可检测，增强数字内容版权保护能力。'
       
     - title: '基于聚合通道特征及卷积神经网络的行人检测'
-      authors: '蔡天任 等'
+      authors: '陈光喜,蔡天任,黄勇,王佳鑫'
       venue: '计算机工程与设计'
       year: '2016'
       description: '提出结合聚合通道特征 (ACF) 与 CNN 的行人检测算法，提高复杂场景检测召回率。'
   
   # 专利与创新成果
   patents:
-    - name: '多模态辅助标注系统及方法'
+    - name: '生成电路板的模板的方法、装置、设备及存储介质'
       type: '发明专利'
       status: '已授权'
-      description: '基于多模态学习技术的智能标注系统，显著提升数据标注效率。'
-      
-    - name: '无监督图像检索优化方案'
+      year: 2024
+      description: '提出一种基于标准定位框属性的电路板模板生成方法，大幅缩短模板生成时间并提升检测效率。'
+
+    - name: '图像清晰度评价方法、装置、电子设备及存储介质'
       type: '发明专利'
       status: '已授权'
-      description: '创新的无监督学习方法，提升图像检索准确率与效率。'
-      
-    - name: '工业智能计数系统'
+      year: 2024
+      description: '基于生成对抗网络与结构相似度的图像清晰度自动评价方法，适用于多场景图像质量评估。'
+
+    - name: '基于大模型的可交互式标注方法及系统'
       type: '发明专利'
       status: '已授权'
-      description: '高精度工业场景目标计数系统，准确率超 98%。'
-      
-    - name: '基于 RAG 的数据库智能问答系统'
+      year: 2023
+      description: '利用图像分割大模型实现可交互式标注，免训练直接部署，显著提升标注效率与泛化能力。'
+
+    - name: '多模态图像检索方法及系统'
       type: '发明专利'
-      status: '申请中'
-      description: '结合检索增强生成技术的智能问答系统，支持自然语言查询数据库。'
+      status: '已授权'
+      year: 2024
+      description: '基于文本反转网络与特征融合的多模态检索方法，实现图文跨模态匹配与高精度检索。'
+

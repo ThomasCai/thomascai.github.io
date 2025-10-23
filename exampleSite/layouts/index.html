@@ -113,28 +113,18 @@
       <div class="col-12 text-center">
         <h2>{{ .title }}</h2>
       </div>
-      <ul id="og-grid" class="og-grid">
-        {{ range .portfolio_list }} {{ $image := resources.Get .image }} {{
-        $big_image := $image.Fit "780x500 jpg" }} {{ $sm_image := $image.Fit
-        "395x250 jpg" }} {{ $parsed_name := replace .name "." "" }}
-        <li>
-          <p id="description-{{ $parsed_name | urlize }}" class="hidden">
-            {{ .description | markdownify }}
-          </p>
-          <a
-            href="{{ .url }}"
-            data-largesrc="{{ $big_image.RelPermalink }}"
-            data-title="{{ .name }}"
-            data-buttontext="SEE SITE"
-          >
-            <img
-              src="{{ $sm_image.RelPermalink }}"
-              alt="{{ $parsed_name }} image"
-            />
-          </a>
-        </li>
+      <div class="row mt-4">
+        {{ range .portfolio_list }}
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="portfolio-item p-4 border rounded">
+            <h4 class="mb-3">{{ .name }}</h4>
+            <div class="portfolio-description">
+              {{ .description | markdownify }}
+            </div>
+          </div>
+        </div>
         {{ end }}
-      </ul>
+      </div>
     </div>
   </div>
 </section>
